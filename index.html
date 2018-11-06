@@ -25,7 +25,16 @@
   <main id="maincontent" role="main">
     <!-- Tabindex -1: excludes of tab order for accessibility -->
     <section id="map-container" tabindex="-1">
-      <!-- Role application: relinquish control of users' keystrokes to the web application-->
+      <!-- Role application: relinquish control of users' keystrokes to the web
+      application-->
+      <!-- Extra-info: Using role="application" tells supporting assistive
+      technologies to change their mode of behaviour. Instead of intercepting
+      keyboard commands to allow interaction with the virtual buffer, they pass
+      all keyboard input through to the browser as if dealing with an
+      application. This goes for all of the content wrapped in a container with
+      this role, whether it's made of up explicit form controls or just simple
+      text.
+      Source: http://accessibleculture.org/articles/2011/02/not-all-aria-widgets-deserve-role-application/-->
       <div id="map" role="application" aria-label="Map of Restaurant Reviews"></div>
     </section>
     <section id="filter-container" aria-labelledby="filter-label" role="region">
