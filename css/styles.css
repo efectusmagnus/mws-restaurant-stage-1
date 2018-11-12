@@ -55,15 +55,7 @@ table { /*new*/
   background-color: #f3f3f3;
   min-height: 100%;
 }
-#footer {
-  background-color: #444;
-  color: #aaa;
-  font-size: 1em;/*old: 8pt*/
-  letter-spacing: 1px;
-  padding: 25px;
-  text-align: center;
-  text-transform: uppercase;
-}
+
 /* ====================== Navigation ====================== */
 nav {
   width: 100%;
@@ -308,6 +300,16 @@ nav h1 a {
 	text-align: justify;
 }
 /* ============================ Footer ==============================*/
+#footer {
+  background-color: #252831;
+  color: #aaa;
+  font-size: 1em;/*old: 8pt*/
+  letter-spacing: 1px;
+  padding: 25px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 .color-link {
 	color: #b88606;
 }
