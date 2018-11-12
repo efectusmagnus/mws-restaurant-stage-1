@@ -32,10 +32,10 @@ const urlsToCache = [
 /**
 * @describe Installing serviceWorker.
 */
-self.addListener('install', e => {
+self.addEventListener('install', e => {
   console.log('Service Worker has been installed! :)');
   e.waitUntil(
-    caches.open('cacheName').then('cache' => {
+    caches.open('cacheName').then(cache => {
       console.log('Service Worker is caching the files! :)');
       return cache.addAll(urlsToCache);
     }).catch(err => {
@@ -47,7 +47,7 @@ self.addListener('install', e => {
 /**
 * @describe serviceWorker intercepts request and return cached version.
 */
-self.addListener('fetch', e => {
+self.addEventListener('fetch', e => {
   e.respondWith(
     caches.match(e.request).then(response => {
       return response || fetch(e.request);
