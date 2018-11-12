@@ -1,6 +1,8 @@
 /**
-* Registering a serviceWorker
+* @describe Registering a serviceWorker
 */
 if ('serviceWorker' in navigator) {
-  //DO SOMETHING
+  navigator.serviceWorker.register('../sw.js')
+  .then((registre) => console.log(`Service Worker's Registration was successful! :)`))
+  .catch(err => console.log(`Registration failed due to ${err} :(`));
 }
