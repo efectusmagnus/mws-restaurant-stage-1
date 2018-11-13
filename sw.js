@@ -1,11 +1,11 @@
 /**
-* serviceWorker
-* Registration is located in "js/register_sw.js"
+* @describe serviceWorker. Registration is located in "js/register_sw.js"
 */
 
 /**
 * @describe Name of cache and path of urls to cache.
 */
+
 const cacheName = 'restaurant-reviews-app-cache-v1';
 const urlsToCache = [
   '/',
