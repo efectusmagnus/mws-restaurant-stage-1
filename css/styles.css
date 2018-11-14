@@ -197,7 +197,9 @@ nav h1 a {
   text-decoration: none;
   text-transform: uppercase;
 }
-
+#restaurants-list li a:hover {
+	background: linear-gradient(0deg, #252831, #ab5e05);
+}
 /* ====================== Restaurant Details ====================== */
 .table-heading {
 	font-weight: 100;
