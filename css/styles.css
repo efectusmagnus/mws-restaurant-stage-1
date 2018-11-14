@@ -199,7 +199,12 @@ nav h1 a {
 }
 
 /* ====================== Restaurant Details ====================== */
-
+.table-heading {
+	font-weight: 100;
+  text-align: center;
+  letter-spacing: -3px;
+  color: #f58500;
+}
 #restaurant-name {
   color: #ab5e05;
   font-family: Arial,sans-serif;
