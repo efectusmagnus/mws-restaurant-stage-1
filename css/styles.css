@@ -105,8 +105,11 @@ nav h1 a {
 
 /* Add a color on mouse-over */
 #breadcrumb li a:hover {
-    color: #01447e;
-    text-decoration: underline;
+	color: #522d92;
+	text-decoration: underline;
+	background-color: rgba(255, 204, 188, 0.5);
+	padding: 1em;
+	border-radius: 50px;
 }
 /* ====================== Map ====================== */
 #map {
