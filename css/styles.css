@@ -114,6 +114,9 @@ nav h1 a {
   width: 100%;
   background-color: #ccc;
 }
+#map a {
+	color: #025677;
+}
 /* ====================== Restaurant Filtering ====================== */
 .filter-options {
   width: 100%;
