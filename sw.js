@@ -1,6 +1,8 @@
-/* The Registration is located in "js/main.js" */
+// The Registration is located in "js/main.js"
+
 /*=======================Installing serviceWorker ===========================*/
-/* Name of cache and path of urls to cache */
+
+// Name of cache and path of urls to cache
 const staticCacheName = 'restaurant-reviews-v1';
 self.addEventListener('install', event => {
   event.waitUntil(
@@ -10,7 +12,6 @@ self.addEventListener('install', event => {
           '/index.html',
           '/css/styles.css',
           '/js/dbhelper.js',
-          '/js/register_sw.js',
           '/js/main.js',
           '/js/restaurant_info.js',
           '/restaurant.html?id=1',
