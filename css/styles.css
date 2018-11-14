@@ -257,6 +257,8 @@ nav h1 a {
 	hyphens: auto;
 	hyphens: manual;
 	word-wrap: break-word;
+	padding: 1em;
+	padding-inline-start: 0;
 }
 #reviews-list li {
   background-color: #fff;
