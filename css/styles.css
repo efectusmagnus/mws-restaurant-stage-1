@@ -203,7 +203,7 @@ nav h1 a {
 	font-weight: 100;
   text-align: center;
   letter-spacing: -3px;
-  color: #f58500;
+  color: #ab5e05;
 	font-size: 2.4em;
 }
 #restaurant-name {
@@ -244,7 +244,7 @@ nav h1 a {
 	padding: 1.5em;
 }
 #reviews-container h2 {
-  color: #f58500;
+  color: #ab5e05;
   font-size: 2.4em;
   font-weight: 300;
   letter-spacing: -1px;
@@ -331,6 +331,9 @@ nav h1 a {
 	}
 	nav {
 		height: 9em;
+	}
+	.table-heading {
+		font-size: 3.5em;
 	}
 	#reviews-container h2 {
 		font-size: 3.5em;
