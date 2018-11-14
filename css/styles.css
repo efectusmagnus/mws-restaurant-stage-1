@@ -316,6 +316,9 @@ nav h1 a {
 
 /* ========================== Media Queries =========================*/
 @media screen and (min-width: 768px) {
+	#restaurant-container, #reviews-container {
+	  padding: 2.7em;
+	}
 	#restaurants-list {
 		grid-template-columns: repeat(2, 1fr);/*Make 2 grid columns*/
 	}
