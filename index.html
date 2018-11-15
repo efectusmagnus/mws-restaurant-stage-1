@@ -34,23 +34,19 @@
     <section id="map-container" tabindex="-1">
       <!-- Role application: relinquish control of users' keystrokes to the web
       application-->
-      <!-- Extra-info: Using role="application" tells supporting assistive
-      technologies to change their mode of behaviour. Instead of intercepting
-      keyboard commands to allow interaction with the virtual buffer, they pass
-      all keyboard input through to the browser as if dealing with an
-      application. This goes for all of the content wrapped in a container with
-      this role, whether it's made of up explicit form controls or just simple
-      text.
-      Source: http://accessibleculture.org/articles/2011/02/not-all-aria-widgets-deserve-role-application/-->
+      <!-- Extra-info: A structure containing one or more focusable elements
+      requiring user input, such as keyboard or gesture events, that do not
+      follow a standard interaction pattern supported by a widget role.
+      Source: https://stackoverflow.com/questions/44712753/what-is-a-suitable-wai-aria-role-attribute-for-a-map-element/-->
       <div id="map" role="application" aria-label="Map of Restaurant Reviews"></div>
     </section>
     <section id="filter-container" aria-labelledby="filter-label" role="region">
       <div class="filter-options">
         <select id="neighborhoods-select" tabindex="2" role="tablist" aria-label="select restaurant neighborhood" name="neighborhoods" onchange="updateRestaurants()">
-          <option value="all">All Neighborhoods</option>
+          <option value="all" role="option">All Neighborhoods</option>
         </select>
         <select id="cuisines-select" tabindex="2" role="tablist" aria-label="select your cuisine preference" name="cuisines" onchange="updateRestaurants()">
-          <option value="all">All Cuisines</option>
+          <option value="all" role="option">All Cuisines</option>
         </select>
       </div>
       <ul id="restaurants-list" role="region" aria-label="restaurants list"></ul>
