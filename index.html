@@ -50,12 +50,13 @@
     </section>
     <section id="filter-container" aria-labelledby="filter-label" role="region">
       <div class="filter-options">
+        <h2 id="filter-label">Filter Results</h2>
         <!--Filter of neighborhoods -->
-        <select id="neighborhoods-select" tabindex="2" role="tablist" aria-label="select restaurant neighborhood" name="neighborhoods" onchange="updateRestaurants()">
+        <select id="neighborhoods-select" tabindex="2" aria-label="select neighborhood" name="neighborhoods" onchange="updateRestaurants()">
           <option value="all" role="option">All Neighborhoods</option>
         </select>
         <!--Filter of cuisines -->
-        <select id="cuisines-select" tabindex="2" role="tablist" aria-label="select your cuisine preference" name="cuisines" onchange="updateRestaurants()">
+        <select id="cuisines-select" tabindex="2" aria-label="select neighborhood" name="cuisines" onchange="updateRestaurants()">
           <option value="all" role="option">All Cuisines</option>
         </select>
       </div>
