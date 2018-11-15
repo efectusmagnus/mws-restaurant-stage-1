@@ -1,8 +1,10 @@
-// The Registration is located in "js/main.js"
-
+/**
+* The Registration is located in "js/main.js"
+*/
 /*=======================Installing serviceWorker ===========================*/
-
-// Name of cache and path of urls to cache
+/**
+* Name of cache and path of urls to cache
+*/
 const staticCacheName = 'restaurant-reviews-v1';
 self.addEventListener('install', event => {
   event.waitUntil(
@@ -24,7 +26,8 @@ self.addEventListener('install', event => {
           '/restaurant.html?id=8',
           '/restaurant.html?id=9',
           '/restaurant.html?id=10',
-          '/img/owl-offline.png'
+          '/img/logo-efectusmagnus-vocal.png',
+          '/img/owl-offline.jpg'
         ]).catch(error => {
           console.log('Caches open failed: ' + error);
         });
@@ -43,7 +46,7 @@ self.addEventListener('fetch', event => {
       });
     }).catch(error => {
       if (event.request.url.includes('.jpg')) {
-        return caches.match('/img/owl-offline.png');
+        return caches.match('/img/owl-offline.jpg');
       }
       return new Response('Not connected to the internet', {
         status: 404,
