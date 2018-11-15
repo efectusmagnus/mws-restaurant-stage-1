@@ -26,7 +26,7 @@ self.addEventListener('install', event => {
           '/restaurant.html?id=8',
           '/restaurant.html?id=9',
           '/restaurant.html?id=10',
-          '/img/logo-efectusmagnus-vocal.png"',
+          '/img/logo-efectusmagnus-vocal.png',
           '/img/owl-offline.jpg'
         ]).catch(error => {
           console.log('Caches open failed: ' + error);
