@@ -185,25 +185,22 @@ nav h1 a {
   margin: 20px 0 10px;
   text-transform: uppercase;
 }
+#restaurants-list li h1:hover {
+	color: #522d92;
+	text-decoration: underline;
+	background-color: rgba(255, 204, 188, 0.4);
+}
 #restaurants-list p {
   margin: 0;
   font-size: 1.1em;
 }
 #restaurants-list li a {
-  background-color: #252831;
-  border-bottom: 1px solid #eee;
-  color: #fff;
-  display: inline-block;
-  font-size: 10pt;
-  margin: 15px 0 0;
-  padding: 8px 30px 10px;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
+	color: #ab5e05;
+	font-size: 1.2em;
 }
-#restaurants-list li a:hover {
+/*#restaurants-list li a:hover {
 	background: linear-gradient(0deg, #252831, #ab5e05);
-}
+}*/
 /* ====================== Restaurant Details ====================== */
 .table-heading {
 	font-weight: 100;
