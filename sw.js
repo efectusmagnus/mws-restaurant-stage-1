@@ -11,6 +11,7 @@ self.addEventListener('install', event => {
     caches.open(staticCacheName)
       .then(cache => {
         return cache.addAll([
+          '/',
           '/index.html',
           '/css/styles.css',
           '/js/dbhelper.js',
@@ -26,7 +27,7 @@ self.addEventListener('install', event => {
           '/restaurant.html?id=8',
           '/restaurant.html?id=9',
           '/restaurant.html?id=10',
-          'data/manifest.json',
+          '/data/manifest.json',
           '/img/Efectusmagnus-white-192.png',
           '/img/Efectusmagnus-white-512.png',
           '/img/owl-offline.jpg'
