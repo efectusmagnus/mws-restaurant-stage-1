@@ -5,7 +5,7 @@
 
 The aim of this project was to build a restaurant reviews website that is responsible (functions in mobile devices and desktop browsers), that is accessible (has the right colors, is readable, is screen-reader friendly, can be used with the keyboards tab) and functions offline (has a service worker that caches files).
 
-[Screenshot of Website in different devices](https://imgur.com/a/M0MBjoL)
+![Screenshot of Website in different devices](https://i.imgur.com/brOEAKq.png)
 
 ## Things that could be improved
 
