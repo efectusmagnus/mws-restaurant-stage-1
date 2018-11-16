@@ -1,10 +1,10 @@
 /**
-* The Registration is located in "js/main.js"
-*/
+ * The Registration is located in "js/main.js"
+ */
 /*=======================Installing serviceWorker ===========================*/
 /**
-* Name of cache and path of urls to cache
-*/
+ * Name of cache and path of urls to cache
+ */
 const staticCacheName = 'restaurant-reviews-v1';
 self.addEventListener('install', event => {
   event.waitUntil(
@@ -32,7 +32,7 @@ self.addEventListener('install', event => {
           '/img/Efectusmagnus-white-512.png',
           '/img/owl-offline.png'
         ]).catch(error => {
-          console.log('Caches open failed: ' + error);
+          console.log('Caches open failed :( ' + error);
         });
       })
   );
@@ -48,17 +48,18 @@ self.addEventListener('fetch', event => {
         });
       });
     }).catch(error => {
+      //if can not fetch image, return owl image saying it's offline
       if (event.request.url.includes('.jpg')) {
-        return caches.match('/img/owl-offline.jpg');
+        return caches.match('/img/owl-offline.png');
       }
-      return new Response('Not connected to the internet', {
+      return new Response('Not connected to the internet :(', {
         status: 404,
         statusText: "Not connected to the internet"
       });
     })
   );
 });
-
+//delete unused chaches
 self.addEventListener('activate', event => {
   event.waitUntil(
     caches.keys().then(cacheNames => {
