@@ -5,9 +5,15 @@
 
 The aim of this project was to build a restaurant reviews website that is responsible (functions in mobile devices and desktop browsers), that is accessible (has the right colors, is readable, is screen-reader friendly, can be used with the keyboards tab) and functions offline (has a service worker that caches files).
 
+![Screenshot of Website in different devices](https://imgur.com/a/M0MBjoL)
+
 ## Things that could be improved
 
 [There is a lot of things that could be improved. xD But let’s just say that] It is missing a 404-error image/page that informs the users if an URL has moved or does not exist.
+
+## Distribution
+
+You can use this code for non-commercial purposes.
 
 Below are the old README instructions.
 ---
