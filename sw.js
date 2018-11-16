@@ -30,7 +30,7 @@ self.addEventListener('install', event => {
           '/data/manifest.json',
           '/img/Efectusmagnus-white-192.png',
           '/img/Efectusmagnus-white-512.png',
-          '/img/owl-offline.jpg'
+          '/img/owl-offline.png'
         ]).catch(error => {
           console.log('Caches open failed: ' + error);
         });
