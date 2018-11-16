@@ -40,8 +40,10 @@ self.addEventListener('install', event => {
 
 self.addEventListener('fetch', event => {
   event.respondWith(
+    // retrieving from a cache/ finding item in a cache
     caches.match(event.request).then(response => {
       return response || fetch(event.request).then(fetchResponse => {
+        // creating and openning a cache
         return caches.open(staticCacheName).then(cache => {
           cache.put(event.request, fetchResponse.clone());
           return fetchResponse;
