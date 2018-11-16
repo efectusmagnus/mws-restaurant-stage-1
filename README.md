@@ -28,7 +28,7 @@ In a terminal, check the version of Python you have: `python -V`. If you have Py
 
 With your server running, visit the site: `http://localhost:9000`.
 
-## Things that could be improved
+## To improve
 
 It is missing a 404-error image/page that informs the users if an URL has moved or does not exist.
 
