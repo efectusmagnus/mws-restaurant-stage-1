@@ -3,12 +3,12 @@
   "name": "Efectusmagnus",
   "icons": [
     {
-      "src": "/img/Efectusmagnus-192.png",
+      "src": "/img/Efectusmagnus-white-192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "/img/Efectusmagnus-512.png",
+      "src": "/img/Efectusmagnus-white-512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
