@@ -177,7 +177,7 @@ createRestaurantHTML = (restaurant) => {
   image.alt = altText; /*new*/
   li.append(image);
 
-  const name = document.createElement('h1');
+  const name = document.createElement('h2');
   name.innerHTML = '';
   const more = document.createElement('a');
   more.innerHTML = restaurant.name;
