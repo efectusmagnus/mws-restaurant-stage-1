@@ -313,6 +313,9 @@ nav h1 a {
   padding: 25px;
   text-align: center;
   text-transform: uppercase;
+	position: relative;
+	bottom: 0;
+	width: 100vw;
 }
 
 .color-link {
@@ -320,12 +323,17 @@ nav h1 a {
 }
 
 /* ========================== Media Queries =========================*/
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 670px) {
 	#restaurant-container, #reviews-container {
 	  padding: 2.7em;
 	}
 	#restaurants-list {
 		grid-template-columns: repeat(2, 1fr);/*Make 2 grid columns*/
+	}
+}
+@media screen and (min-width: 1058px) {
+	#restaurants-list {
+		grid-template-columns: repeat(3, 1fr);/*Make 3 grid columns*/
 	}
 }
 @media screen and (min-width:1024px) {
@@ -380,7 +388,7 @@ nav h1 a {
 	}
 	.inside #map-container {
 	  background: blue none repeat scroll 0 0;
-	  height: 87%;
+	  height: 85vh;
 	  position: fixed;
 	  right: 0;
 	  top: 80px;
@@ -388,24 +396,25 @@ nav h1 a {
 	}
 	.inside #map {
 	  background-color: #ccc;
-	  height: 100%;
+	  height: 85vh;
 	  width: 100%;
 	}
 	.inside #footer {
-	  position: absolute;
-	  width: 100%;
+	  position: fixed;
+	  width: 100vw;
+		bottom: 0;
 	}
 	footer#footer {
     padding: 1em;
 	}
 }
 
-@media screen and (min-width: 1200px) {
-	#restaurants-list {
-		grid-template-columns: repeat(3, 1fr);/*Make 3 grid columns*/
-}
-
-@media screen and (min-width: 1800px) {
+@media screen and (min-width: 1688px){
 	#restaurants-list {
 		grid-template-columns: repeat(4, 1fr);/*Make 4 grid columns*/
+}
+
+@media screen and (min-width: 1850px) {
+	#restaurants-list {
+		grid-template-columns: repeat(5, 1fr);/*Make 4 grid columns*/
 }
