@@ -6,6 +6,7 @@
  * Name of cache and path of urls to cache
  */
 const staticCacheName = 'restaurant-reviews-v1';
+
 self.addEventListener('install', event => {
   event.waitUntil(
     caches.open(staticCacheName)
