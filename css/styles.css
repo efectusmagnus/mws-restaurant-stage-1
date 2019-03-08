@@ -409,24 +409,13 @@ nav h1 a {
 	}
 }
 
-<<<<<<< HEAD
 @media screen and (min-width: 1688px){
-||||||| merged common ancestors
-@media screen and (min-width: 1200px) {
-=======
-@media screen and (min-width: 1100px) and (max-width: 1299px){
->>>>>>> d4987da75b1bd4f8a5bb4134e4686aea3d00204c
 	#restaurants-list {
 		grid-template-columns: repeat(4, 1fr);/*Make 4 grid columns*/
+  }
 }
 
-<<<<<<< HEAD
 @media screen and (min-width: 1850px) {
-||||||| merged common ancestors
-@media screen and (min-width: 1800px) {
-=======
-@media screen and (min-width: 1300px) {
->>>>>>> d4987da75b1bd4f8a5bb4134e4686aea3d00204c
 	#restaurants-list {
-		grid-template-columns: repeat(5, 1fr);/*Make 4 grid columns*/
+		grid-template-columns: repeat(5, 1fr);/*Make 5 grid columns*/
 }
