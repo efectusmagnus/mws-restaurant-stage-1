@@ -316,6 +316,7 @@ nav h1 a {
 	position: relative;
 	bottom: 0;
 	width: 100vw;
+	box-sizing: border-box;
 }
 
 .color-link {
